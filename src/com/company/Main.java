@@ -6,7 +6,7 @@ public class Main {
         double xzero = 0;
         double yzero = -5;
         double h = 1;
-        NewtonForword nf = new NewtonForword(xzero, yzero, h);
+        NewtonForward nf = new NewtonForward(xzero, yzero, h);
 
         nf.add(1);
 
@@ -16,6 +16,6 @@ public class Main {
 
         nf.printForwardDifference();
         System.out.println();
-        System.out.println(nf.P);
+        System.out.println(nf.Polynomial);
     }
 }

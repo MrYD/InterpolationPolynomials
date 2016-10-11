@@ -5,19 +5,19 @@ import java.util.ArrayList;
 /**
  * Created by Main on 2016/10/10.
  */
-public class NewtonForword {
-    public Polynomial P;
+public class NewtonForward {
+    public Polynomial Polynomial;
     public ArrayList<ArrayList<Double>> ForwardDifferences;
     public double Xzero;
     public double H;
     public ArrayList<Double> YList;
 
-    public NewtonForword(double xzero,double yzero,double h){
+    public NewtonForward(double xzero,double yzero,double h){
         YList = new ArrayList<>();
         this.Xzero = xzero;
         this.H = h;
         YList.add(yzero);
-        P = new Polynomial(new double[]{yzero});
+        Polynomial = new Polynomial(new double[]{yzero});
         ForwardDifferences = new ArrayList<>();
         ForwardDifferences.add(new ArrayList<>());
         ForwardDifferences.get(0).add(yzero);
@@ -41,7 +41,7 @@ public class NewtonForword {
         }
         np = np.Multi(1/(double)factorial(n));
         np = np.Multi(ForwardDifferences.get(ForwardDifferences.size()-1).get(0));
-        P = P.Add(np);
+        Polynomial = Polynomial.Add(np);
     }
 
     public void printForwardDifference(){
