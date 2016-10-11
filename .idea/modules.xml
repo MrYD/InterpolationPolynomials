@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/InterpolationPolynomials.iml" filepath="$PROJECT_DIR$/InterpolationPolynomials.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InterpolationPolynominals.iml" filepath="$PROJECT_DIR$/InterpolationPolynominals.iml" />
     </modules>
   </component>
 </project>
